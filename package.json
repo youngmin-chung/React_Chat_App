@@ -16,10 +16,10 @@
         "react-scripts": "3.4.3"
     },
     "scripts": {
-        "dev-server": "webpack-dev-server --open",
-        "start": "node server.js",
-        "build": "webpack -p",
-        "heroku-postbuild": "npm run build"
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": "react-app"
