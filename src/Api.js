@@ -6,10 +6,16 @@ import firebaseConfig from "./firebaseConfig";
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
+const auth = firebase.auth();
 
 export default {
     fbPopup: async () => {
         const provider = new firebase.auth.FacebookAuthProvider();
+        let result = await firebaseApp.auth().signInWithPopup(provider);
+        return result;
+    },
+    googlePopup: async () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
         let result = await firebaseApp.auth().signInWithPopup(provider);
         return result;
     },
@@ -143,4 +149,5 @@ export default {
             }
         }
     },
+    auth,
 };
