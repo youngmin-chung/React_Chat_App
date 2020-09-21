@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COVID-19 STATS PROJECT (http://youngminchung.com/COVID-19/)
 
-## Available Scripts
+![](https://img.shields.io/badge/Built-React-blue)
+![](https://img.shields.io/badge/Built-JavaScript-yellow)
+![](https://img.shields.io/badge/Built-MaterialUI-yellowgreen)
+![](https://img.shields.io/badge/Built-CSS-orange)
+![](https://img.shields.io/badge/Built-Firebase-green)
 
-In the project directory, you can run:
+![](https://img.shields.io/badge/Inspired-WhatsApp-yellowgreen)
+![](https://img.shields.io/badge/LectureBy-BoniekyLacerda-orange)
 
-### `yarn start`
+## Project Name 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Chatting App cloned from WhatsApp An application used to chatting form, built with React, JavaScript, Material UI, CSS and Firebase Authentication/Firestore.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Project Status
 
-### `yarn test`
+#### This project is currently in development. Major functionality about chatting each other, login authentication by google/facebook account works after login via Google/Facebook
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Screen Shot(s)
 
-### `yarn build`
+[ SCREEN SHOT IS HERE ]
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[ OTHER SCREEN SHOT IS HERE ]
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Installation and Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Example:  
 
-### `yarn eject`
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Installation: `npm install`  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Start Server: `npm start`  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To Visit App: `localhost:3000/`  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Reflection
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features using React, JavaScript, Material UI, CSS and Firebase Authentication/Firestore Originally I wanted to build an application that allowed users to chat each other.
+I started this process by using the create-react-app boilerplate.
+One of the main challenges as follows,
+1. Add functions like changing profile photo and profile message.
+2. Add function to upload multimedia such as photo, video and voice recording to chat screen. 
+3. Add function like searching user name at search field.
+4. Add function to delete current chat room(s)
