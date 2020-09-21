@@ -4,6 +4,7 @@ import Api from "../Api";
 // import { Link, useHistory } from "react-router-dom";
 
 export default ({ onReceive }) => {
+    // leave commented below code for email authentication
     // const history = useHistory();
     // const [email, setEmail] = useState("");
     // const [password, setPassword] = useState("");
@@ -24,7 +25,7 @@ export default ({ onReceive }) => {
             alert("Error!");
         }
     };
-
+    // leave commented below code for email authentication
     // const login = (event) => {
     //     event.preventDefault();
     //     Api.auth
@@ -55,7 +56,9 @@ export default ({ onReceive }) => {
                 alt=""
             />
             <div className="login_container">
-                {/* <h1>Sign In</h1>
+                {/* 
+                // leave commented below code for email authentication 
+                <h1>Sign In</h1>
                 <form>
                     <h5>E-mail</h5>
                     <input

@@ -10,11 +10,20 @@ import ChatIntro from "./components/ChatIntro";
 import ChatWindow from "./components/ChatWindow";
 import NewChat from "./components/NewChat";
 import Login from "./components/Login";
+import Tooltip from "@material-ui/core/Tooltip";
 
 export default () => {
     const [chatList, setChatList] = useState([]);
     const [activeChat, setActiveChat] = useState({});
-    const [user, setUser] = useState(null);
+    // Uncomment here before deploying/publishing
+    //const [user, setUser] = useState(null);
+
+    // Comment here before deploying/publishing
+    const [user, setUser] = useState({
+        id: "lshPuh6XSeeff8rcU61bk9gIvY83",
+        name: "Test Account",
+        avatar: "https://www.w3schools.com/howto/img_avatar2.png",
+    });
 
     const [showNewChat, setShowNewChat] = useState(false);
 
@@ -58,21 +67,31 @@ export default () => {
                         src={user.avatar}
                         alt=""
                     ></img>
+
+                    <p className="user_name">{user.name}</p>
                     <div className="header_buttons">
-                        <div className="header_btn">
-                            <DonutLargeIcon style={{ color: "#919191" }} />
-                        </div>
-                        <div onClick={handleNewChat} className="header_btn">
-                            <ChatIcon style={{ color: "#919191" }} />
-                        </div>
-                        <div className="header_btn">
-                            <MoreVertIcon style={{ color: "#919191" }} />
-                        </div>
+                        <Tooltip title="Status (...not yet)" arrow>
+                            <div className="header_btn">
+                                <DonutLargeIcon style={{ color: "#919191" }} />
+                            </div>
+                        </Tooltip>
+                        <Tooltip title="New Chat" arrow>
+                            <div onClick={handleNewChat} className="header_btn">
+                                <ChatIcon style={{ color: "#919191" }} />
+                            </div>
+                        </Tooltip>
+                        <Tooltip title="More (...not yet)" arrow>
+                            <div className="header_btn">
+                                <MoreVertIcon style={{ color: "#919191" }} />
+                            </div>
+                        </Tooltip>
                     </div>
                 </header>
                 <div className="search">
                     <div className="search_input">
-                        <SearchIcon style={{ color: "#919191" }} />
+                        <Tooltip title="Search function (...not yet)" arrow>
+                            <SearchIcon style={{ color: "#919191" }} />
+                        </Tooltip>
                         <input type="search" placeholder="Search the name" />
                     </div>
                 </div>
