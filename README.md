@@ -1,4 +1,4 @@
-# COVID-19 STATS PROJECT (http://youngminchung.com/COVID-19/)
+# ChatApp Clone PROJECT (https://chatapp-clone.herokuapp.com/)
 
 ![](https://img.shields.io/badge/Built-React-blue)
 ![](https://img.shields.io/badge/Built-JavaScript-yellow)
